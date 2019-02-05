@@ -10,7 +10,7 @@ if(isset($_SESSION["pseudo"])){
     echo ' <a href="disconnect.php">Disconnect</a>';
 
 }else if(!isset($_SESSION["pseudo"])){
-    echo
+    
 }
     ?>
     <a href="login.php">Login</a>

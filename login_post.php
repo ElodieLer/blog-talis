@@ -2,7 +2,7 @@
 require "database.php";
 
 $req = $db->prepare('SELECT * FROM users WHERE pseudo = :pseudo AND password = :password'); //on ecrit notre requete
-$req->execute(arrway(                   //on execute notre requete
+$req->execute(array(                   //on execute notre requete
     "pseudo" => $_POST["pseudo"],
     "password" => $_POST["password"]
 )); 
