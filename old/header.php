@@ -13,5 +13,5 @@ if(!isset($_SESSION["pseudo"]) && !isset($loginPage)){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <?php require_once 'nav-bar.php'; ?>
+<body>  
+    <?php require 'nav-bar.php'; ?>
