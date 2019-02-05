@@ -7,6 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+<?php require 'nav-bar.php'; ?>
+<!--plus d'autres trucs ecrit -->
+    <nav>
+    <a href="index.php">Home</a>
+    <a href="admin.php">Admin</a>
+    <a href="login.php">Login</a>
+    <a href="disconnect.php">Disconnect</a>
+    </nav>
+
+    
     <form action="login-post.php"method="post">
         <input type="text" placeholder="pseudo" name="pseudo">
         <input type="password"placeholder="password" name="password">
