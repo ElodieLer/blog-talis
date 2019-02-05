@@ -8,8 +8,9 @@ $req = $db->query('SELECT * FROM posts');
 $req->execute();
 
 // While show all posts
-while($donnees = $req->fetch()){
-    var_dump($donnees);
+while($row = $req->fetch(PDO::FETCH_ASSOC)){
+    echo "<h2>{$row["title"]}</h2>";
+    echo "<p>{$row["content"]}</p>";
 }
 
 
