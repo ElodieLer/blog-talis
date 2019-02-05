@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php require 'nav-bar.php'; ?>
-<!--plus d'autres trucs ecrit -->
+<!--ecrire la suite -->
     <nav>
     <a href="index.php">Home</a>
     <a href="admin.php">Admin</a>
