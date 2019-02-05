@@ -8,5 +8,18 @@
 
     <a href="add_post.php">Ajouter article</a>
 
+    <?php
+
+    $req = $db->query("SELECT id FROM posts");
+    $req->execute();
+
+    while($row = $req->fetch(PDO::FETCH_ASSOC)){
+        echo"<h4>{$row["title"]}</ha>";
+
+        echo "<a href='delete_post.php?id={$row["id"]}'>supprimer</a>";
+    }
+
+    ?>
+
 </body>
 </html>
